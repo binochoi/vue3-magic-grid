@@ -1,0 +1,17 @@
+{
+    "dependencyDashboard": true,
+    "lockFileMaintenance": {
+        "enabled": true
+    },
+    "packageRules": [
+        {
+            "matchDepTypes": ["devDependencies"],
+            "automerge": true
+        },
+        {
+            "matchUpdateTypes": ["major", "minor", "patch"],
+            "automerge": true
+        }
+    ],
+    "platformAutomerge": true
+}
