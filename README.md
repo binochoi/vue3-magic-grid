@@ -1,5 +1,6 @@
 # Magic Grid for Vue3
-extended from [magic-grid](https://github.com/e-oj/Magic-Grid)
+[magic-grid](https://github.com/e-oj/Magic-Grid) wrapper for Vue 3
+extended from 
 
 ```bash
 npm i --save vue3-magic-grid
@@ -12,7 +13,6 @@ import { MagicGrid } from 'vue3-magic-grid'
 <template>
   <MagicGrid
     :options="{
-      animate: true,
       gutter: 30,
       static: true,
       useMin: true,
@@ -25,3 +25,9 @@ import { MagicGrid } from 'vue3-magic-grid'
   </MagicGrid>
 </template>
 ```
+
+# Warn
+## Dynamic list
+magic-grid doesnt support dynamic list.
+so this library refresh all DOM whenever changed count.
+therefore not recommend built-in animate option. Use DIY animation or transition instead.
