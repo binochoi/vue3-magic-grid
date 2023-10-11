@@ -2,7 +2,7 @@
   "name": "vue3-magic-grid",
 	"description": "magic grid wrapper for Vue 3",
 	"license": "MIT",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/vue3-magic-grid.js",
   "type": "module",
   "types": "dist/index.d.ts",
