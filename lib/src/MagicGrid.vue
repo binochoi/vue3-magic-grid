@@ -6,8 +6,8 @@ const container = ref<HTMLDivElement>();
 let containerHeight = ref<number>(0);
 let magicGrid: MagicGrid;
 const props = defineProps<{
-  options: MagicGridProps,
-  count: number;
+  options?: MagicGridProps,
+  count?: number;
 }>();
 const initMagicGrid = () => {
   magicGrid = new MagicGrid({
