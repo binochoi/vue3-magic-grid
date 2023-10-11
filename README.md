@@ -1,6 +1,5 @@
 # Magic Grid for Vue3
 [magic-grid](https://github.com/e-oj/Magic-Grid) wrapper for Vue 3
-extended from 
 
 ```bash
 npm i --save vue3-magic-grid
