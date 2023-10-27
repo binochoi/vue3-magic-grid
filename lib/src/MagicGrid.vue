@@ -14,10 +14,17 @@ const initMagicGrid = () => {
     ...props.options,
     container: container.value!,
   });
-  magicGrid.listen();
-  const containerScrollHeight = container.value!.scrollHeight;
-  containerHeight.value = containerScrollHeight;
-  magicGrid.positionItems();
+  let interval: NodeJS.Timeout;
+  const init = () => {
+    if(magicGrid.ready() === false) {
+      return;
+    }
+    const containerScrollHeight = container.value!.scrollHeight;
+    containerHeight.value = containerScrollHeight;
+    magicGrid.listen();
+    clearInterval(interval);
+  }
+  interval = setInterval(init, 200);
 }
 onMounted(initMagicGrid);
 watch(() => props.count, () => {
